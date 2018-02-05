@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.matteotognon.assessement.CadastrarActivity">
+    <EditText
+        android:id="@+id/edtnome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="NOME COMPLETO"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edtemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtnome"
+        android:layout_alignStart="@+id/edtnome"
+        android:layout_below="@+id/edtnome"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="LOGIN(EMAIL)"
+        android:inputType="textEmailAddress"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edtsenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtemail"
+        android:layout_alignStart="@+id/edtemail"
+        android:layout_below="@+id/edtemail"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="SENHA"
+        android:textSize="20dp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/edtsenhaconf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtsenha"
+        android:layout_alignStart="@+id/edtsenha"
+        android:layout_below="@+id/edtsenha"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="CONFIRMAR SENHA"
+        android:textSize="20dp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/edtCPF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtsenhaconf"
+        android:layout_alignStart="@+id/edtsenhaconf"
+        android:layout_below="@+id/edtsenhaconf"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="CPF"
+        android:textSize="20dp"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/btnconfirmarcadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edtCPF"
+        android:layout_alignLeft="@+id/edtCPF"
+        android:layout_alignRight="@+id/edtCPF"
+        android:layout_alignStart="@+id/edtCPF"
+        android:layout_below="@+id/edtCPF"
+        android:layout_marginTop="25dp"
+        android:onClick="salvar"
+        android:text="Confirmar Cadastro" />
+
+    <Button
+        android:id="@+id/btnvoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnconfirmarcadastro"
+        android:layout_alignLeft="@+id/btnconfirmarcadastro"
+        android:layout_alignRight="@+id/btnconfirmarcadastro"
+        android:layout_alignStart="@+id/btnconfirmarcadastro"
+        android:layout_below="@+id/btnconfirmarcadastro"
+        android:layout_marginTop="15dp"
+        android:onClick="voltar"
+        android:text="Voltar para o menu" />
+</RelativeLayout>

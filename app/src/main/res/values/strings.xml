@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Assessement</string>
+    <string name="facebook_app_id">1990957231150150</string>
+    <string name="fb_login_protocol_scheme">fb1990957231150150</string>
+</resources>
